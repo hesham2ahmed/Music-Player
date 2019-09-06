@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:src="@drawable/ic_music_with_color"
+            android:background="@drawable/radius"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/song_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developer"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"/>
+            <TextView
+                android:id="@+id/song_artist_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developer"
+                android:textSize="12dp"
+                android:layout_gravity="top"/>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/ic_paly_arrow"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
